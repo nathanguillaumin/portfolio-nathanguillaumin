@@ -1,0 +1,151 @@
+/* Technos and tools */
+@media (min-width: 992px) {
+  .technos-item {
+    width: calc(100% / 6) !important;
+  }
+}
+
+/* HTML - CSS */
+.startup_tab .nav-item:nth-child(1) .icon {
+  background: none !important;
+  border: 2px solid #e34c26;
+}
+
+.startup_tab .nav-item:nth-child(1) .nav-link.active {
+  border-color: #e34c26 !important;
+}
+
+.html-logo {
+  color: #e34c26;
+}
+
+.css-logo {
+  color: #264de4;
+}
+
+/* React */
+.startup_tab .nav-item:nth-child(2) .icon {
+  background: none !important;
+  border: 2px solid #61dbfb;
+}
+
+.startup_tab .nav-item:nth-child(2) .nav-link.active {
+  border-color: #61dbfb !important;
+}
+
+.react-logo {
+  color: #6fadfa;
+}
+
+/* Node */
+.startup_tab .nav-item:nth-child(3) .icon {
+  background: none !important;
+  border: 2px solid #68a063;
+}
+
+.node-logo {
+  color: #68a063;
+}
+
+.startup_tab .nav-item:nth-child(3) .nav-link.active {
+  border-color: #68a063 !important;
+}
+
+/* Api platform */
+.startup_tab .nav-item:nth-child(4) .icon {
+  background: none !important;
+  border: 2px solid rgb(108, 206, 207);
+}
+
+.startup_tab .nav-item:nth-child(4) .nav-link.active {
+  border-color: rgb(108, 206, 207) !important;
+}
+
+.api-platform-logo {
+  width: 40px;
+  color: rgb(108, 206, 207);
+}
+
+/* Shopify */
+.startup_tab .nav-item:nth-child(5) .icon {
+  background: none !important;
+  border: 2px solid #95bf47;
+}
+
+.shopify-logo {
+  width: 40px;
+  color: #95bf47;
+}
+
+.startup_tab .nav-item:nth-child(5) .nav-link.active {
+  border-color: #95bf47 !important;
+}
+
+/* Webflow */
+.startup_tab .nav-item:nth-child(6) .icon {
+  background: none !important;
+  border: 2px solid #445cfc;
+}
+
+.webflow-logo {
+  width: 40px;
+  color: #445cfc;
+}
+
+.startup_tab .nav-item:nth-child(6) .nav-link.active {
+  border-color: #445cfc !important;
+}
+
+.img-website {
+  max-width: 100%;
+}
+
+.btn_send_custom {
+  background: #5e2ced;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  width: 50%;
+  margin: auto;
+  border: 2px solid #5e2ced;
+  box-sizing: border-box;
+}
+
+.btn_send_custom:hover,
+.btn_send_custom:active {
+  background: #fff;
+  border: 2px solid;
+  border-color: #ccc5fa;
+  color: #a485fd !important;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.contact-box {
+  margin-bottom: 100px;
+}
+
+.footer-padding {
+  padding: 120px 0px 200px !important;
+}
+
+.working-with-me {
+  padding-top: 30px !important;
+}
+
+.technos-container {
+  padding-bottom: 30px !important;
+}
+
+.icon-working-with-me {
+  width: 50%;
+  bottom: 10%;
+  position: relative;
+}
+
+.icon-working-with-marketing {
+  width: 40%;
+  bottom: 10%;
+  position: relative;
+}
