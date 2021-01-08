@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import { TextField } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";

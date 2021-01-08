@@ -53,6 +53,7 @@ class Footer extends Component {
                                 key={item.id}
                                 className="mr-4"
                                 target="_blank"
+                                rel="noopener noreferrer"
                                 style={{ zIndex: "3000" }}
                               >
                                 <i className={item.icon}></i>

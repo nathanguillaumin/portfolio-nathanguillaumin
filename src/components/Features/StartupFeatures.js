@@ -154,7 +154,11 @@ class StartupFeatures extends Component {
               aria-labelledby="market-tab"
             >
               <div className="startup_tab_img">
-                <a href="http://jobooster.io/" target="_blank">
+                <a
+                  href="http://jobooster.io/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h3>Jobooster's Website</h3>
                 </a>
                 <p>
@@ -169,7 +173,11 @@ class StartupFeatures extends Component {
                   </ul>
                 </p>
                 <div className="web_img">
-                  <a href="http://jobooster.io/" target="_blank">
+                  <a
+                    href="http://jobooster.io/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={require("../../img/custom/jobooster-website.png")}
                       alt="Jobooster website"
@@ -186,7 +194,11 @@ class StartupFeatures extends Component {
               aria-labelledby="app-tab"
             >
               <div className="startup_tab_img">
-                <a href="https://shop.sixpad.com/" target="_blank">
+                <a
+                  href="https://shop.sixpad.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h3>1) AudioWizard's software</h3>
                 </a>
                 <p>
@@ -202,7 +214,11 @@ class StartupFeatures extends Component {
                   role as well as a bug fixer.
                 </p>
                 <div className="web_img">
-                  <a href="https://shop.sixpad.com/" target="_blank">
+                  <a
+                    href="https://shop.sixpad.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={require("../../img/custom/sixpad-website.png")}
                       alt="Sixpad website"
@@ -212,7 +228,11 @@ class StartupFeatures extends Component {
                 </div>
               </div>
               <div className="startup_tab_img">
-                <a href="https://monsterproducts.eu/" target="_blank">
+                <a
+                  href="https://monsterproducts.eu/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <h3>2) Monster's Website</h3>
                 </a>
                 <p>
@@ -224,7 +244,11 @@ class StartupFeatures extends Component {
                   headphones, speakers, HDMI cables and power solutions.
                 </p>
                 <div className="web_img">
-                  <a href="https://monsterproducts.eu/" target="_blank">
+                  <a
+                    href="https://monsterproducts.eu/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <img
                       src={require("../../img/custom/monster-website.png")}
                       alt="Monster website"

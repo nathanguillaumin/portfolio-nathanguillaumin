@@ -40,7 +40,11 @@ class SliderHTML extends Component {
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
-            <a href="https://audiowizard.fr/" target="_blank">
+            <a
+              href="https://audiowizard.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>AudioWizard's Website</h3>
             </a>
             <p>
@@ -55,7 +59,11 @@ class SliderHTML extends Component {
               position in first SERP on their targetted keywords.
             </p>
             <div className="web_img">
-              <a href="https://audiowizard.fr/" target="_blank">
+              <a
+                href="https://audiowizard.fr/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../img/custom/audiowizard-website.png")}
                   alt="AudioWizard website"

@@ -40,7 +40,11 @@ class SliderHTML extends Component {
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
-            <a href="https://shop.sixpad.com/" target="_blank">
+            <a
+              href="https://shop.sixpad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Sixpad's Website</h3>
             </a>
             <p>
@@ -56,7 +60,11 @@ class SliderHTML extends Component {
               best.
             </p>
             <div className="web_img">
-              <a href="https://shop.sixpad.com/" target="_blank">
+              <a
+                href="https://shop.sixpad.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../img/custom/sixpad-website.png")}
                   alt="Sixpad website"
@@ -66,7 +74,11 @@ class SliderHTML extends Component {
             </div>
           </div>
           <div className="startup_tab_img">
-            <a href="https://monsterproducts.eu/" target="_blank">
+            <a
+              href="https://monsterproducts.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>Monster's Website</h3>
             </a>
             <p>
@@ -78,7 +90,11 @@ class SliderHTML extends Component {
               speakers, HDMI cables and power solutions.
             </p>
             <div className="web_img">
-              <a href="https://monsterproducts.eu/" target="_blank">
+              <a
+                href="https://monsterproducts.eu/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img
                   src={require("../img/custom/monster-website.png")}
                   alt="Monster website"
