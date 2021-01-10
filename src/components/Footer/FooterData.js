@@ -14,17 +14,17 @@ const FooterData = {
       menuItems: [
         {
           id: 1,
-          url: "#",
+          url: "about-me",
           text: "About me",
         },
         {
           id: 2,
-          url: "#",
+          url: "technos-and-tools",
           text: "My technos and tools",
         },
         {
           id: 3,
-          url: "#",
+          url: "working-with-me",
           text: "Working with me",
         },
       ],

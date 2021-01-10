@@ -59,19 +59,17 @@ class SliderHTML extends Component {
               titles, meta-descs and keywords to make Sixpad ranked among the
               best.
             </p>
-            <div className="web_img">
-              <a
-                href="https://shop.sixpad.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={require("../img/custom/sixpad-website.png")}
-                  alt="Sixpad website"
-                  className="img-website"
-                />
-              </a>
-            </div>
+            <a
+              href="https://shop.sixpad.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("../img/custom/sixpad-website.png")}
+                alt="Sixpad website"
+                className="img-website"
+              />
+            </a>
           </div>
           <div className="startup_tab_img">
             <a
@@ -89,19 +87,17 @@ class SliderHTML extends Component {
               become a big French ecommerce for high-performance headphones,
               speakers, HDMI cables and power solutions.
             </p>
-            <div className="web_img">
-              <a
-                href="https://monsterproducts.eu/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src={require("../img/custom/monster-website.png")}
-                  alt="Monster website"
-                  className="img-website"
-                />
-              </a>
-            </div>
+            <a
+              href="https://monsterproducts.eu/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("../img/custom/monster-website.png")}
+                alt="Monster website"
+                className="img-website"
+              />
+            </a>
           </div>
         </Slider>
       </React.Fragment>

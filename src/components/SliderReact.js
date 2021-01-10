@@ -40,52 +40,105 @@ class SliderHTML extends Component {
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
-            <a href="https://shop.sixpad.com/" target="_blank">
-              <h3>Sixpad's Website</h3>
-            </a>
+            <h3>AudioWizard's software</h3>
             <p>
-              Sixpad is an international sports accessories brand working with
-              Cristiano Ronaldo.
-              <br />
-              I designed their Shopify store for French market. I chose a theme,
-              use a page builder and integrated the contents.
+              I worked on AudioWizard new features software during 6 months.
               <br />
               <br />
-              Off-page and on-page SEO was of course an important topic: I chose
-              titles, meta-descs and keywords to make Sixpad ranked among the
-              best.
+              AudioWizard is using React.js as front-end technology and I have
+              been able to provide my knowledge to improve the software.
+              <br />
+              Working in agile role, I had features to implement during each
+              week's sprint. I also sometimes stick to the code reviewer's role
+              as well as a bug fixer.
             </p>
-            <div className="web_img">
-              <a href="https://shop.sixpad.com/" target="_blank">
-                <img
-                  src={require("../img/custom/sixpad-website.png")}
-                  alt="Sixpad website"
-                  className="img-website"
-                />
-              </a>
-            </div>
+            <img
+              src={require("../img/custom/audiowizard-software.png")}
+              alt="Audiowizard software"
+              className="img-website"
+            />
           </div>
           <div className="startup_tab_img">
-            <a href="https://monsterproducts.eu/" target="_blank">
-              <h3>Monster's Website</h3>
+            <a
+              href="https://weathersuggest-project.netlify.app/"
+              target="_blank"
+            >
+              <h3>Weather Suggest application</h3>
             </a>
             <p>
-              As Sixpad, Monster is an international brand. I also built their
-              Shopify website for French market.
+              Weather Suggest is a project I have worked on when I started to
+              learn React.js.
               <br />
-              <br />I web designed following Monster's guidelines in order to
-              become a big French ecommerce for high-performance headphones,
-              speakers, HDMI cables and power solutions.
+              <br />
+              WeatherSuggest is a web application displaying the weather
+              forecasts according to the users' preferences whether it be by
+              geolocating or by choosing a position. My aim was also to provide
+              air quality indices and suggestion of clothes according to
+              weather.
             </p>
-            <div className="web_img">
-              <a href="https://monsterproducts.eu/" target="_blank">
-                <img
-                  src={require("../img/custom/monster-website.png")}
-                  alt="Monster website"
-                  className="img-website"
-                />
-              </a>
-            </div>
+            <a
+              href="https://weathersuggest-project.netlify.app/"
+              target="_blank"
+            >
+              <img
+                src={require("../img/custom/weathersuggest.png")}
+                alt="WeatherSuggest application"
+                className="img-website"
+              />
+            </a>
+          </div>
+          <div className="startup_tab_img">
+            <a
+              href="https://valiris-front-office.vbserveur.duckdns.org/"
+              target="_blank"
+            >
+              <h3>Valiris website</h3>
+            </a>
+            <p>
+              I worked for the client SCI Gervais Immobilier who whished a
+              custom website to display and offer its appartments for short-term
+              rent.
+              <br />
+              <br />
+              React.js was used for the front-office and the back-office of the
+              website. Calls to REST API are made to display all the details and
+              a form enables customers or visitors to make a booking or an
+              information request.
+              <br />I translated the website using I18N module.
+            </p>
+            <a
+              href="https://valiris-front-office.vbserveur.duckdns.org/"
+              target="_blank"
+            >
+              <img
+                src={require("../img/custom/valiris.png")}
+                alt="Valiris website"
+                className="img-website"
+              />
+            </a>
+          </div>
+          <div className="startup_tab_img">
+            <a href="https://travel-art.netlify.app/" target="_blank">
+              <h3>TravelArt project</h3>
+            </a>
+            <p>
+              TravelArt was my first project in React.js. I created and built it
+              during a 24h-Hackathon.
+              <br />
+              <br />
+              The project was done during first lockdown in 2020 and the aim was
+              to provide culture to internet users thanks to MET Museum API.
+              <br />I decided to display categories of art works according to
+              their continent of origin. We can then choose the period (BC or
+              AC) and watch all the details about the art works.
+            </p>
+            <a href="https://travel-art.netlify.app/" target="_blank">
+              <img
+                src={require("../img/custom/travel-art.png")}
+                alt="TravelArt website"
+                className="img-website"
+              />
+            </a>
           </div>
         </Slider>
       </React.Fragment>

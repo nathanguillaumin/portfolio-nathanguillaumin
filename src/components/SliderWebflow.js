@@ -41,31 +41,31 @@ class SliderHTML extends Component {
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
             <a
-              href="https://audiowizard.fr/"
+              href="http://jobooster.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>AudioWizard's Website</h3>
+              <h3>Jobooster's Website</h3>
             </a>
             <p>
-              During that mission, I web designed and integrated the whole
-              AudioWizard website with HTML and SCSS.
+              Jobooster is a side project I am conducting with a friend. We
+              propose coaching for people who are looking for a job.
               <br />
-              In order to gain time and to be more effective in my work, I used
-              Gulp task manager to process tasks such as JS and CSS
-              minifications...
-              <br />
-              <br />I also worked on SEO strategies: brought Audiowizard first
-              position in first SERP on their targetted keywords.
+              <br />I am in charge of the "tech part":
+              <ul>
+                <li>Building the website on Webflow on e-commerce plan</li>{" "}
+                <li>Finding the best snippets and tools to improve UX</li>{" "}
+                <li>Creating SEO strategies</li>
+              </ul>
             </p>
             <a
-              href="https://audiowizard.fr/"
+              href="http://jobooster.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={require("../img/custom/audiowizard-website.png")}
-                alt="AudioWizard website"
+                src={require("../img/custom/jobooster-website.png")}
+                alt="Jobooster website"
                 className="img-website"
               />
             </a>

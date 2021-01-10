@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Reveal from "react-reveal/Reveal";
 class Footer extends Component {
   render() {
@@ -24,7 +24,17 @@ class Footer extends Component {
                           {widget.menuItems.map((item) => {
                             return (
                               <li key={item.id}>
-                                <Link to="/">{item.text}</Link>
+                                <Link
+                                  className="nav-link"
+                                  activeClass="active"
+                                  to={item.url}
+                                  spy={true}
+                                  smooth={true}
+                                  offset={0}
+                                  duration={500}
+                                >
+                                  {item.text}
+                                </Link>
                               </li>
                             );
                           })}

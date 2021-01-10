@@ -2,7 +2,10 @@ import React from "react";
 
 const CoreFeatures = () => {
   return (
-    <section className="chat_core_features_area sec_pad working-with-me">
+    <section
+      className="chat_core_features_area sec_pad working-with-me"
+      id="working-with-me"
+    >
       <div className="container">
         <div className="hosting_title chat_title text-center">
           <h2 className="wow fadeInUp" data-wow-delay="0.2s">
@@ -29,10 +32,6 @@ const CoreFeatures = () => {
               <p>
                 I am based on GMT+1 timezone and I am free to move to work with
                 you and your team in Europe or anywhere worldwide.
-                <br />
-                <br />
-                <br />I will strive to bring force of proposal, motivation and
-                energy not only to your applications but also to your teams.
               </p>
             </div>
           </div>
@@ -58,11 +57,6 @@ const CoreFeatures = () => {
               <p>
                 I already launched my own company on French market and I support
                 some brands and entrepreneurs in their projects.
-                <br />
-                <br />I am always more confortable in small dynamic work teams.
-                If not implemented, I also would be willing to bring
-                organization and process within your teams in order to reach the
-                most effective work spirit.
               </p>
             </div>
           </div>
@@ -88,11 +82,6 @@ const CoreFeatures = () => {
               <p>
                 Graduated with a Master from a business school, I have had some
                 experiences in webmarketing within companies such as L'Oréal.
-                <br />
-                <br />
-                <br />I also chose to train with SEO and I will be able to help
-                you launching your analytics, tracking audiences, and generate
-                your leads through hacks and methods.
               </p>
             </div>
           </div>

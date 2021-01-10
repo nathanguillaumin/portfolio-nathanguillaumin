@@ -41,31 +41,30 @@ class SliderHTML extends Component {
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
             <a
-              href="https://audiowizard.fr/"
+              href="http://jobooster.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>AudioWizard's Website</h3>
+              <h3>Valiris website</h3>
             </a>
             <p>
-              During that mission, I web designed and integrated the whole
-              AudioWizard website with HTML and SCSS.
+              I worked for the client SCI Gervais Immobilier who whished a
+              custom website to display and offer its appartments for short-term
+              rent.
               <br />
-              In order to gain time and to be more effective in my work, I used
-              Gulp task manager to process tasks such as JS and CSS
-              minifications...
               <br />
-              <br />I also worked on SEO strategies: brought Audiowizard first
-              position in first SERP on their targetted keywords.
+              With two of my colleagues, we created a REST API and used Express
+              framework of Node.js in order to make CRUDs and to handle the
+              back-end of the website.
             </p>
             <a
-              href="https://audiowizard.fr/"
+              href="http://jobooster.io/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={require("../img/custom/audiowizard-website.png")}
-                alt="AudioWizard website"
+                src={require("../img/custom/jobooster-website.png")}
+                alt="Jobooster website"
                 className="img-website"
               />
             </a>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import Sticky from "react-stickynode";
 
 class CustomNavbar extends Component {
@@ -51,12 +51,13 @@ class CustomNavbar extends Component {
                 <ul className={`navbar-nav menu ml-auto ${nClass}`}>
                   <li className="nav-item dropdown submenu mega_menu mega_menu_two">
                     <Link
-                      to="./"
-                      className="nav-link dropdown-toggle"
-                      role="button"
-                      data-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      className="nav-link"
+                      activeClass="active"
+                      to="about-me"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
                     >
                       About me
                     </Link>
@@ -64,34 +65,42 @@ class CustomNavbar extends Component {
 
                   <li className="dropdown submenu nav-item">
                     <Link
-                      to="./"
-                      title="Pages"
-                      className="dropdown-toggle nav-link"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      className="nav-link"
+                      activeClass="active"
+                      to="technos-and-tools"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
                     >
                       My technos and tools
                     </Link>
                   </li>
                   <li className="dropdown submenu nav-item">
                     <Link
-                      to="./"
-                      title="Pages"
-                      className="dropdown-toggle nav-link"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      className="nav-link"
+                      activeClass="active"
+                      to="working-with-me"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
                     >
                       Working with me
                     </Link>
                   </li>
                 </ul>
-                <a className={`btn_get btn_hover ${hbtnClass}`} href="#get-app">
+                <Link
+                  className={`btn_get btn_hover ${hbtnClass}`}
+                  activeClass="active"
+                  to="contact"
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </nav>

@@ -15,12 +15,12 @@
   border-color: #e34c26 !important;
 }
 
-.html-logo {
-  color: #e34c26;
+.logo-techno {
+  width: 100px;
 }
 
-.css-logo {
-  color: #264de4;
+.api-platform-logo {
+  width: 80px;
 }
 
 /* React */
@@ -33,18 +33,10 @@
   border-color: #61dbfb !important;
 }
 
-.react-logo {
-  color: #6fadfa;
-}
-
 /* Node */
 .startup_tab .nav-item:nth-child(3) .icon {
   background: none !important;
   border: 2px solid #68a063;
-}
-
-.node-logo {
-  color: #68a063;
 }
 
 .startup_tab .nav-item:nth-child(3) .nav-link.active {
@@ -61,20 +53,10 @@
   border-color: rgb(108, 206, 207) !important;
 }
 
-.api-platform-logo {
-  width: 40px;
-  color: rgb(108, 206, 207);
-}
-
 /* Shopify */
 .startup_tab .nav-item:nth-child(5) .icon {
   background: none !important;
   border: 2px solid #95bf47;
-}
-
-.shopify-logo {
-  width: 40px;
-  color: #95bf47;
 }
 
 .startup_tab .nav-item:nth-child(5) .nav-link.active {
@@ -87,17 +69,15 @@
   border: 2px solid #445cfc;
 }
 
-.webflow-logo {
-  width: 40px;
-  color: #445cfc;
-}
-
 .startup_tab .nav-item:nth-child(6) .nav-link.active {
   border-color: #445cfc !important;
 }
 
 .img-website {
   max-width: 100%;
+  width: 50%;
+  margin: auto;
+  margin-top: 30px;
 }
 
 .btn_send_custom {
@@ -127,7 +107,7 @@
 }
 
 .footer-padding {
-  padding: 120px 0px 200px !important;
+  padding: 120px 0px 220px !important;
 }
 
 .working-with-me {

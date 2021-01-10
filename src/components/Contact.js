@@ -64,7 +64,7 @@ Message: ${form.message}`,
   }
 
   return (
-    <div className="container contact-box" id="subscription">
+    <div className="container contact-box" id="contact">
       <div className={`subscribe_form_info text-center ${sClass}`}>
         <h2 className="f_600 f_size_30 l_height30 t_color3 mb_50">
           Contact me
@@ -74,6 +74,7 @@ Message: ${form.message}`,
           className="subscribe-form d-flex flex-column"
           name="contact"
           onSubmit={(e) => handleSubmit(e)}
+          netlify
         >
           {/* <input
             type="hidden"

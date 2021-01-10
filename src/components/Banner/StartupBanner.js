@@ -1,8 +1,10 @@
 import React from "react";
 import Fade from "react-reveal/Fade";
+import { Link } from "react-scroll";
+
 const StBanner = () => {
   return (
-    <section className="agency_banner_area_two">
+    <section className="agency_banner_area_two" id="about-me">
       <div className="dot_shap one"></div>
       <div className="dot_shap two"></div>
       <div className="dot_shap three"></div>
@@ -28,17 +30,22 @@ const StBanner = () => {
                   Welcome on my own portfolio, I hope you will find all the
                   details you might need.
                   <br />
-                  <br />
-                  I have specialized with front-end design interfaces thanks to
-                  React.js and SCSS.
-                  <br />I also worked with back-end technologies such as
-                  Node.js, API Platform and Symfony5. If you need more details,
-                  please contact me.
+                  <br />I have specialized with front-end design interfaces
+                  thanks to React.js and SCSS, and also worked with back-end
+                  technologies such as Node.js, API Platform and Symfony5.
                 </p>
                 <div className="action_btn d-flex align-items-center mt_40">
-                  <a href=".#" className="btn_hover agency_banner_btn">
+                  <Link
+                    className="btn_hover agency_banner_btn"
+                    activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={0}
+                    duration={500}
+                  >
                     Contact me
-                  </a>
+                  </Link>
                 </div>
               </div>
             </Fade>
