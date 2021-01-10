@@ -62,6 +62,7 @@ class SliderHTML extends Component {
             <a
               href="https://weathersuggest-project.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <h3>Weather Suggest application</h3>
             </a>
@@ -79,6 +80,7 @@ class SliderHTML extends Component {
             <a
               href="https://weathersuggest-project.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("../img/custom/weathersuggest.png")}
@@ -91,6 +93,7 @@ class SliderHTML extends Component {
             <a
               href="https://valiris-front-office.vbserveur.duckdns.org/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <h3>Valiris website</h3>
             </a>
@@ -109,6 +112,7 @@ class SliderHTML extends Component {
             <a
               href="https://valiris-front-office.vbserveur.duckdns.org/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("../img/custom/valiris.png")}
@@ -118,7 +122,11 @@ class SliderHTML extends Component {
             </a>
           </div>
           <div className="startup_tab_img">
-            <a href="https://travel-art.netlify.app/" target="_blank">
+            <a
+              href="https://travel-art.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>TravelArt project</h3>
             </a>
             <p>
@@ -132,7 +140,11 @@ class SliderHTML extends Component {
               their continent of origin. We can then choose the period (BC or
               AC) and watch all the details about the art works.
             </p>
-            <a href="https://travel-art.netlify.app/" target="_blank">
+            <a
+              href="https://travel-art.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={require("../img/custom/travel-art.png")}
                 alt="TravelArt website"
