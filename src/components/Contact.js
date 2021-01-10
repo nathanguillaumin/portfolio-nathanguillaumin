@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+// import axios from "axios";
 import { TextField } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
@@ -21,13 +21,13 @@ const Contact = ({ sClass }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      text: `
-      Nathan ! Tu as reçu un nouveau lead !
-Nom: ${form.name}
-Email: ${form.email}
-Message: ${form.message}`,
-    };
+    //     const data = {
+    //       text: `
+    //       Nathan ! Tu as reçu un nouveau lead !
+    // Nom: ${form.name}
+    // Email: ${form.email}
+    // Message: ${form.message}`,
+    //     };
 
     try {
       // await axios.post(
