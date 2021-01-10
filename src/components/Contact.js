@@ -30,10 +30,10 @@ Message: ${form.message}`,
     };
 
     try {
-      await axios.post(
-        "https://hooks.slack.com/services/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",
-        JSON.stringify(data)
-      );
+      // await axios.post(
+      //   "https://hooks.slack.com/services/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",
+      //   JSON.stringify(data)
+      // );
 
       setMessageForm(true);
       setErrorForm(false);
