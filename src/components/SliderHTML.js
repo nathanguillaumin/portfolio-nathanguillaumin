@@ -1,41 +1,52 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick/";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-class SliderHTML extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+const SliderHTML = ({ show }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-      ],
-    };
+      },
+    ],
+  };
+
+  if (!show.html) {
+    return (
+      <div
+        className="w-100 d-flex justify-content-center align-items-center"
+        style={{ height: "500px" }}
+      >
+        <CircularProgress />
+      </div>
+    );
+  } else
     return (
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
@@ -73,7 +84,6 @@ class SliderHTML extends Component {
         </Slider>
       </React.Fragment>
     );
-  }
-}
+};
 
 export default SliderHTML;

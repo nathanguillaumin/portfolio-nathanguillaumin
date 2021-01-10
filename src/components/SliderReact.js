@@ -1,41 +1,52 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick/";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-class SliderHTML extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+const SliderReact = ({ show }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-      ],
-    };
+      },
+    ],
+  };
+
+  if (!show.react) {
+    return (
+      <div
+        className="w-100 d-flex justify-content-center align-items-center"
+        style={{ height: "500px" }}
+      >
+        <CircularProgress />
+      </div>
+    );
+  } else
     return (
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
@@ -62,6 +73,7 @@ class SliderHTML extends Component {
             <a
               href="https://weathersuggest-project.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <h3>Weather Suggest application</h3>
             </a>
@@ -79,6 +91,7 @@ class SliderHTML extends Component {
             <a
               href="https://weathersuggest-project.netlify.app/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("../img/custom/weathersuggest.png")}
@@ -91,6 +104,7 @@ class SliderHTML extends Component {
             <a
               href="https://valiris-front-office.vbserveur.duckdns.org/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <h3>Valiris website</h3>
             </a>
@@ -109,6 +123,7 @@ class SliderHTML extends Component {
             <a
               href="https://valiris-front-office.vbserveur.duckdns.org/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 src={require("../img/custom/valiris.png")}
@@ -118,7 +133,11 @@ class SliderHTML extends Component {
             </a>
           </div>
           <div className="startup_tab_img">
-            <a href="https://travel-art.netlify.app/" target="_blank">
+            <a
+              href="https://travel-art.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <h3>TravelArt project</h3>
             </a>
             <p>
@@ -132,7 +151,11 @@ class SliderHTML extends Component {
               their continent of origin. We can then choose the period (BC or
               AC) and watch all the details about the art works.
             </p>
-            <a href="https://travel-art.netlify.app/" target="_blank">
+            <a
+              href="https://travel-art.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 src={require("../img/custom/travel-art.png")}
                 alt="TravelArt website"
@@ -143,7 +166,6 @@ class SliderHTML extends Component {
         </Slider>
       </React.Fragment>
     );
-  }
-}
+};
 
-export default SliderHTML;
+export default SliderReact;

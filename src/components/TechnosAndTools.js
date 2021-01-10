@@ -1,12 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import Sectitle from "./Title/Sectitle";
-import Tabitem from "./Service/Sservice/CloudServiceTabItem";
 import SliderHTML from "./SliderHTML";
 import SliderShopify from "./SliderShopify";
 import SliderReact from "./SliderReact";
 import SliderWebflow from "./SliderWebflow";
+import SliderNode from "./SliderNode";
+import SliderAPIPlatform from "./SliderAPIPlatform";
 
 const TechnosAndTools = () => {
+  const [show, setShow] = useState({
+    html: true,
+    react: false,
+    node: false,
+    apiPlatform: false,
+    shopify: false,
+    webflow: false,
+  });
+
   return (
     <section className="software_service_area sec_pad">
       <div className="container" id="technos-and-tools">
@@ -31,6 +41,18 @@ const TechnosAndTools = () => {
                   role="tab"
                   aria-controls="de"
                   aria-selected="true"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: true,
+                        react: false,
+                        node: false,
+                        apiPlatform: false,
+                        shopify: false,
+                        webflow: false,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -50,6 +72,18 @@ const TechnosAndTools = () => {
                   role="tab"
                   aria-controls="saas"
                   aria-selected="false"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: true,
+                        node: false,
+                        apiPlatform: false,
+                        shopify: false,
+                        webflow: false,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -63,12 +97,24 @@ const TechnosAndTools = () => {
               <li className="nav-item">
                 <a
                   className="nav-link"
-                  id="ma-tab"
+                  id="saas-tab"
                   data-toggle="tab"
-                  href="#ma"
+                  href="#node"
                   role="tab"
-                  aria-controls="ma"
-                  aria-selected="true"
+                  aria-controls="saas"
+                  aria-selected="false"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: false,
+                        node: true,
+                        apiPlatform: false,
+                        shopify: false,
+                        webflow: false,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -84,10 +130,22 @@ const TechnosAndTools = () => {
                   className="nav-link"
                   id="scale-tab"
                   data-toggle="tab"
-                  href="#scale"
+                  href="#api-platform"
                   role="tab"
                   aria-controls="scale"
                   aria-selected="true"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: false,
+                        node: false,
+                        apiPlatform: true,
+                        shopify: false,
+                        webflow: false,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -107,6 +165,18 @@ const TechnosAndTools = () => {
                   role="tab"
                   aria-controls="monitor"
                   aria-selected="false"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: false,
+                        node: false,
+                        apiPlatform: false,
+                        shopify: true,
+                        webflow: false,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -126,6 +196,18 @@ const TechnosAndTools = () => {
                   role="tab"
                   aria-controls="monitor"
                   aria-selected="false"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: false,
+                        node: false,
+                        apiPlatform: false,
+                        shopify: false,
+                        webflow: true,
+                      });
+                    }, 500);
+                  }}
                 >
                   <span className="icon">
                     <img
@@ -146,7 +228,7 @@ const TechnosAndTools = () => {
                 role="tabpanel"
                 aria-labelledby="de-tab"
               >
-                <SliderHTML />
+                <SliderHTML show={show} />
               </div>
               <div
                 className="tab-pane fade"
@@ -154,7 +236,7 @@ const TechnosAndTools = () => {
                 role="tabpanel"
                 aria-labelledby="saas-tab"
               >
-                <SliderReact />
+                <SliderReact show={show} />
               </div>
               <div
                 className="tab-pane fade"
@@ -162,68 +244,28 @@ const TechnosAndTools = () => {
                 role="tabpanel"
                 aria-labelledby="saas-tab"
               >
-                <SliderWebflow />
-              </div>
-              <div
-                className="tab-pane fade"
-                id="ma"
-                role="tabpanel"
-                aria-labelledby="ma-tab"
-              >
                 <div className="row">
-                  <Tabitem
-                    ticon="ti-user"
-                    text="Team Management"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-basketball"
-                    text="Global Availability"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    ticon="ti-face-smile"
-                    text="Cluster Deployments"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-harddrives"
-                    text="Backups & Snapshots"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
+                  <SliderWebflow show={show} />
                 </div>
               </div>
               <div
                 className="tab-pane fade"
-                id="secure"
+                id="node"
+                role="tabpanel"
+                aria-labelledby="ma-tab"
+              >
+                <div className="row">
+                  <SliderNode show={show} />
+                </div>
+              </div>
+              <div
+                className="tab-pane fade"
+                id="api-platform"
                 role="tabpanel"
                 aria-labelledby="secure-tab"
               >
                 <div className="row">
-                  <Tabitem
-                    ticon="ti-user"
-                    text="Team Management"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-basketball"
-                    text="Global Availability"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    ticon="ti-face-smile"
-                    text="Cluster Deployments"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-harddrives"
-                    text="Backups & Snapshots"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
+                  <SliderAPIPlatform show={show} />
                 </div>
               </div>
               <div
@@ -233,7 +275,7 @@ const TechnosAndTools = () => {
                 aria-labelledby="scale-tab"
               >
                 <div className="row">
-                  <Tabitem
+                  {/* <Tabitem
                     ticon="ti-user"
                     text="Team Management"
                     description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
@@ -254,7 +296,7 @@ const TechnosAndTools = () => {
                     ticon="ti-basketball"
                     text="Global Availability"
                     description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
+                  /> */}
                 </div>
               </div>
               <div
@@ -263,7 +305,7 @@ const TechnosAndTools = () => {
                 role="tabpanel"
                 aria-labelledby="monitor-tab"
               >
-                <SliderShopify />
+                <SliderShopify show={show} setShow={setShow} />
               </div>
             </div>
           </div>

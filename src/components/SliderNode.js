@@ -1,47 +1,58 @@
-import React, { Component } from "react";
+import React from "react";
 import Slider from "react-slick/";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-class SliderHTML extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      arrows: false,
-      autoplay: true,
-      autoplaySpeed: 2000,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+const SliderNode = ({ show }) => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
         },
-      ],
-    };
+      },
+    ],
+  };
+
+  if (!show.node) {
+    return (
+      <div
+        className="w-100 d-flex justify-content-center align-items-center"
+        style={{ height: "500px" }}
+      >
+        <CircularProgress />
+      </div>
+    );
+  } else
     return (
       <React.Fragment>
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
             <a
-              href="http://jobooster.io/"
+              href="https://valiris-back-office.vbserveur.duckdns.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -58,13 +69,13 @@ class SliderHTML extends Component {
               back-end of the website.
             </p>
             <a
-              href="http://jobooster.io/"
+              href="https://valiris-back-office.vbserveur.duckdns.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={require("../img/custom/jobooster-website.png")}
-                alt="Jobooster website"
+                src={require("../img/custom/valiris-back.png")}
+                alt="Valiris website"
                 className="img-website"
               />
             </a>
@@ -72,7 +83,6 @@ class SliderHTML extends Component {
         </Slider>
       </React.Fragment>
     );
-  }
-}
+};
 
-export default SliderHTML;
+export default SliderNode;

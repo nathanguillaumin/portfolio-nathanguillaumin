@@ -2,7 +2,7 @@ import React from "react";
 import Slider from "react-slick/";
 import CircularProgress from "@material-ui/core/CircularProgress";
 
-const SliderWebflow = ({ show }) => {
+const SliderAPIPlatform = ({ show }) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -37,7 +37,7 @@ const SliderWebflow = ({ show }) => {
     ],
   };
 
-  if (!show.webflow) {
+  if (!show.apiPlatform) {
     return (
       <div
         className="w-100 d-flex justify-content-center align-items-center"
@@ -52,31 +52,30 @@ const SliderWebflow = ({ show }) => {
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
             <a
-              href="http://jobooster.io/"
+              href="https://invoice-handler-react.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h3>Jobooster's Website</h3>
+              <h3>SymReact project</h3>
             </a>
             <p>
-              Jobooster is a side project I am conducting with a friend. We
-              propose coaching for people who are looking for a job.
+              API Platform is a REST and GraphQL framework to build modern
+              API-driven projects.
               <br />
-              <br />I am in charge of the "tech part":
-              <ul>
-                <li>Building the website on Webflow on e-commerce plan</li>{" "}
-                <li>Finding the best snippets and tools to improve UX</li>{" "}
-                <li>Creating SEO strategies</li>
-              </ul>
+              SymReact is a project I have created and deployed in order to
+              learn API Platform. On this project, I display a list of customers
+              and their belongings invoices. It is possible to create, change
+              and delete customers and invoices. The aim is to follow accounting
+              for a company.
             </p>
             <a
-              href="http://jobooster.io/"
+              href="https://invoice-handler-react.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <img
-                src={require("../img/custom/jobooster-website.png")}
-                alt="Jobooster website"
+                src={require("../img/custom/symreact.png")}
+                alt="Symreact project"
                 className="img-website"
               />
             </a>
@@ -86,4 +85,4 @@ const SliderWebflow = ({ show }) => {
     );
 };
 
-export default SliderWebflow;
+export default SliderAPIPlatform;

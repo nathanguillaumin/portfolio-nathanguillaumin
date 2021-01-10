@@ -76,11 +76,7 @@ Message: ${form.message}`,
           onSubmit={(e) => handleSubmit(e)}
           netlify
         >
-          {/* <input
-            type="hidden"
-            name="form-name"
-            value="subscription-enterprises"
-          /> */}
+          <input type="hidden" name="form-name" value="contact" />
           <TextField
             required
             name="name"
@@ -110,7 +106,11 @@ Message: ${form.message}`,
             onChange={(e) => handleChange(e)}
             placeholder="Message"
           />
-          <button type="submit" className="btn_hover btn_send_custom mt_40">
+          <button
+            type="submit"
+            name="submit"
+            className="btn_hover btn_send_custom mt_40"
+          >
             Send
           </button>
         </form>
