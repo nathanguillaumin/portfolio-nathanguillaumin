@@ -70,12 +70,13 @@ const Contact = ({ sClass }) => {
         <h2 className="f_600 f_size_30 l_height30 t_color3 mb_50">
           Contact me
         </h2>
+
         <form
           method="post"
-          className="subscribe-form d-flex flex-column"
+          className="subscribe-form d-flex flex-column pageclip-form"
           name="contact"
           onSubmit={(e) => handleSubmit(e)}
-          netlify
+          action="https://send.pageclip.co/JSEmvyHuLVlzDrsTceZOfgOfuojP9u8P"
         >
           <input type="hidden" name="form-name" value="contact" />
           <TextField
