@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import axios from "axios";
+import axios from "axios";
 import { TextField } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
@@ -21,19 +21,19 @@ const Contact = ({ sClass }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    //     const data = {
-    //       text: `
-    //       Nathan ! Tu as reçu un nouveau lead !
-    // Nom: ${form.name}
-    // Email: ${form.email}
-    // Message: ${form.message}`,
-    //     };
+    const data = {
+      text: `
+          Nathan ! Tu as reçu un nouveau lead !
+    Nom: ${form.name}
+    Email: ${form.email}
+    Message: ${form.message}`,
+    };
 
     try {
-      // await axios.post(
-      //   "https://hooks.slack.com/services/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",
-      //   JSON.stringify(data)
-      // );
+      await axios.post(
+        "https://discord.com/api/webhooks/797888764893986836/XvD-P9vt0jbWVc_GZG1S_j4jN_2HhFybe4cJ5lQYpWYadnFtfss-pknlkkqLXHl4dMls",
+        JSON.stringify(data)
+      );
 
       setMessageForm(true);
       setErrorForm(false);
