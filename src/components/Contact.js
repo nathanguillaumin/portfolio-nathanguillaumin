@@ -30,7 +30,7 @@ Message: ${form.message}`,
     };
 
     try {
-      const result = await axios.post(
+      await axios.post(
         "https://hooks.slack.com/services/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",
         JSON.stringify(data)
       );
