@@ -30,12 +30,10 @@ Message: ${form.message}`,
     };
 
     try {
-      const result = await axios.post(
-        "https://hooks.slack.com/services/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",
+      await axios.post(
+        "https://hooks.slack.com/services/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",
         JSON.stringify(data)
       );
-
-      console.log(result);
 
       setMessageForm(true);
       setErrorForm(false);
@@ -49,6 +47,9 @@ Message: ${form.message}`,
       });
     } catch (error) {
       console.log(error);
+      setMessageForm(true);
+      setErrorForm(true);
+      setMsgAlert("Une erreur s'est produite. Merci de réessayer.");
     }
   };
 
