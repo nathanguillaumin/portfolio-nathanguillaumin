@@ -15,11 +15,13 @@ class CustomNavbar extends Component {
                   src={require("../img/custom/logo_white.png")}
                   style={{ width: "60%" }}
                   alt="White logo of Nathan Guillaumin's Portfolio"
+                  class="logo-nathan"
                 />
                 <img
                   src={require("../img/custom/logo_2.png")}
                   style={{ width: "60%" }}
                   alt="Logo of Nathan Guillaumin's Portfolio"
+                  class="logo-nathan"
                 />
               </Link>
               <button

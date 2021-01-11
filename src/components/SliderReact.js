@@ -134,6 +134,41 @@ const SliderReact = ({ show }) => {
           </div>
           <div className="startup_tab_img">
             <a
+              href="https://api-multidiffusion-offre-et-recherche-emploi.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h3>Multidiffusion application and landing page</h3>
+            </a>
+            <p>
+              I have had the chance to work on a new ambitious project with the
+              goal of centralizing job offers in a single platform.
+              <br />
+              <br />
+              The multidiffusion app has a double objective. For the candidates,
+              it enables them to apply for a position, their application is
+              registered and sent to all ressembling offers. For the companies,
+              it enables their HR to display their offers in only one platform,
+              and to target applicants much faster.
+              <br />
+              <br />
+              Here is the landing page I built in React.js. The application is
+              made in React.js and API Platform.
+            </p>
+            <a
+              href="https://api-multidiffusion-offre-et-recherche-emploi.fr/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src={require("../img/custom/api-multidiffusion.png")}
+                alt="Multidiffusion application"
+                className="img-website"
+              />
+            </a>
+          </div>
+          <div className="startup_tab_img">
+            <a
               href="https://travel-art.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"

@@ -25,7 +25,7 @@ class Footer extends Component {
                             return (
                               <li key={item.id}>
                                 <Link
-                                  className="nav-link"
+                                  className="nav-link links-footer"
                                   activeClass="active"
                                   to={item.url}
                                   spy={true}

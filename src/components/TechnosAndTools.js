@@ -6,6 +6,7 @@ import SliderReact from "./SliderReact";
 import SliderWebflow from "./SliderWebflow";
 import SliderNode from "./SliderNode";
 import SliderAPIPlatform from "./SliderAPIPlatform";
+import SliderGrowth from "./SliderGrowth";
 
 const TechnosAndTools = () => {
   const [show, setShow] = useState({
@@ -15,6 +16,7 @@ const TechnosAndTools = () => {
     apiPlatform: false,
     shopify: false,
     webflow: false,
+    growth: false,
   });
 
   return (
@@ -32,7 +34,7 @@ const TechnosAndTools = () => {
               id="myTab"
               role="tablist"
             >
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link active"
                   id="de-tab"
@@ -50,6 +52,7 @@ const TechnosAndTools = () => {
                         apiPlatform: false,
                         shopify: false,
                         webflow: false,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -63,7 +66,7 @@ const TechnosAndTools = () => {
                   </span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link"
                   id="saas-tab"
@@ -81,6 +84,7 @@ const TechnosAndTools = () => {
                         apiPlatform: false,
                         shopify: false,
                         webflow: false,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -94,7 +98,7 @@ const TechnosAndTools = () => {
                   </span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link"
                   id="saas-tab"
@@ -112,6 +116,7 @@ const TechnosAndTools = () => {
                         apiPlatform: false,
                         shopify: false,
                         webflow: false,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -125,7 +130,7 @@ const TechnosAndTools = () => {
                   </span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link"
                   id="scale-tab"
@@ -143,6 +148,7 @@ const TechnosAndTools = () => {
                         apiPlatform: true,
                         shopify: false,
                         webflow: false,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -156,7 +162,7 @@ const TechnosAndTools = () => {
                   </span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link"
                   id="monitor-tab"
@@ -174,6 +180,7 @@ const TechnosAndTools = () => {
                         apiPlatform: false,
                         shopify: true,
                         webflow: false,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -187,7 +194,7 @@ const TechnosAndTools = () => {
                   </span>
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item m-auto text-center">
                 <a
                   className="nav-link"
                   id="monitor-tab"
@@ -205,6 +212,7 @@ const TechnosAndTools = () => {
                         apiPlatform: false,
                         shopify: false,
                         webflow: true,
+                        growth: false,
                       });
                     }, 500);
                   }}
@@ -216,6 +224,39 @@ const TechnosAndTools = () => {
                       className="logo-techno my-4"
                     />
                   </span>
+                </a>
+              </li>
+              <li className="nav-item m-auto text-center">
+                <a
+                  className="nav-link"
+                  id="monitor-tab"
+                  data-toggle="tab"
+                  href="#growth"
+                  role="tab"
+                  aria-controls="monitor"
+                  aria-selected="false"
+                  onClick={() => {
+                    setTimeout(() => {
+                      setShow({
+                        html: false,
+                        react: false,
+                        node: false,
+                        apiPlatform: false,
+                        shopify: false,
+                        webflow: false,
+                        growth: true,
+                      });
+                    }, 500);
+                  }}
+                >
+                  <span className="icon">
+                    <img
+                      src={require("../img/custom/webmarketing.svg")}
+                      alt="Logo of LinkedIn Sales Navigator"
+                      className="logo-growth"
+                    />
+                  </span>
+                  <h6 className="text-center">Growth and web marketing</h6>
                 </a>
               </li>
             </ul>
@@ -270,34 +311,11 @@ const TechnosAndTools = () => {
               </div>
               <div
                 className="tab-pane fade"
-                id="scale"
+                id="growth"
                 role="tabpanel"
                 aria-labelledby="scale-tab"
               >
-                <div className="row">
-                  {/* <Tabitem
-                    ticon="ti-user"
-                    text="Team Management"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-face-smile"
-                    text="Cluster Deployments"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    ticon="ti-harddrives"
-                    text="Backups & Snapshots"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  />
-                  <Tabitem
-                    colClass="offset-lg-2"
-                    ticon="ti-basketball"
-                    text="Global Availability"
-                    description="Crikey blow off chap knackered gosh bobby geeza gormless well, Charles cheeky bugger I cor blimey guvnor hanky panky jolly good."
-                  /> */}
-                </div>
+                <SliderGrowth show={show} />
               </div>
               <div
                 className="tab-pane fade"

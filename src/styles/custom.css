@@ -19,6 +19,10 @@
   width: 100px;
 }
 
+.logo-growth {
+  height: 50px;
+}
+
 .api-platform-logo {
   width: 80px;
 }
@@ -31,6 +35,10 @@
 
 .startup_tab .nav-item:nth-child(2) .nav-link.active {
   border-color: #61dbfb !important;
+}
+
+.react-logo {
+  color: #61dbfb;
 }
 
 /* Node */
@@ -128,4 +136,30 @@
   width: 40%;
   bottom: 10%;
   position: relative;
+}
+
+.footer_bg {
+  height: 235px !important;
+}
+
+.links-footer {
+  cursor: pointer;
+}
+
+.case_studies_slider {
+  margin: 0 !important;
+}
+
+.row {
+  margin: 0 !important;
+}
+
+@media (max-width: 401px) {
+  .sticky_logo {
+    width: 50% !important;
+  }
+
+  .logo-nathan {
+    width: 80%;
+  }
 }

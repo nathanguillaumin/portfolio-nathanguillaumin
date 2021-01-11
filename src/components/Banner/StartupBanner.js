@@ -27,7 +27,7 @@ const StBanner = () => {
                   Nathan Guillaumin, web developer
                 </h2>
                 <p className="f_400 w_color l_height28">
-                  Welcome on my own portfolio, I hope you will find all the
+                  Welcome to my own portfolio, I hope you will find all the
                   details you might need.
                   <br />
                   <br />I have specialized with front-end design interfaces

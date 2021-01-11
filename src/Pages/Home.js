@@ -6,6 +6,7 @@ import Footer from "../components/Footer/Footer";
 import FooterData from "../components/Footer/FooterData";
 import CoreFeatures from "../components/Features/CoreFeatures";
 import TechnosAndTools from "../components/TechnosAndTools";
+import AppTestimonial from "../components/Testimonial/AppTestimonial";
 
 export const Home = () => (
   <div className="body_wrapper">
@@ -13,6 +14,7 @@ export const Home = () => (
     <StartupBanner />
     <TechnosAndTools />
     <CoreFeatures />
+    <AppTestimonial />
     <Contact />
     <Footer FooterData={FooterData} />
   </div>

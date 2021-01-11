@@ -1,25 +1,23 @@
 import React, { Component } from "react";
-// import logo from "../../../img/custom/audiowizard-software.png";
+import { itemsTab } from "./DataTabItem";
 class Tabitem extends Component {
   render() {
-    var { text, description, colClass, url, srcImage } = this.props;
-    return (
-      <div className={`col-lg-5 col-md-6 ${colClass}`}>
-        <div className="software_service_item mb_70">
-          <a href={url} target="_blank" rel="noopener noreferrer">
+    return itemsTab.map((i) => {
+      return (
+        <div className={`col-lg-5 col-md-6`}>
+          <div className="software_service_item mb_70">
             <img
-              src={`../../../img/custom/${srcImage}`}
-              alt={text}
-              className="img-website"
+              src={require(`../../../img/custom/${i.image}.png`)}
+              alt={`Logo of ${i.title}`}
+              className="logo-growth"
             />
-          </a>
-          <a href={url} target="_blank" rel="noopener noreferrer">
-            <h5 className="mt_30 mb_15">{text}</h5>
-          </a>
-          <p>{description}</p>
+
+            <h5 className="mt_30 mb_15">{i.title}</h5>
+            <p>{i.description}</p>
+          </div>
         </div>
-      </div>
-    );
+      );
+    });
   }
 }
 export default Tabitem;
