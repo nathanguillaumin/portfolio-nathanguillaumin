@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import axios from "axios";
 import { TextField } from "@material-ui/core";
 import Snackbar from "@material-ui/core/Snackbar";
 import MuiAlert from "@material-ui/lab/Alert";
@@ -21,18 +20,31 @@ const Contact = ({ sClass }) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const data = {
-      text: `
-          Nathan ! Tu as reçu un nouveau lead !
-    Nom: ${form.name}
-    Email: ${form.email}
-    Message: ${form.message}`,
+
+    const message = {
+      embeds: [
+        {
+          title:
+            "Nouveau lead sur ton portfolio, Nathan !\n\n" +
+            document.location.href,
+          description: `**Nom:** ${form.name} \n\n **Email:** ${form.email} \n\n **Message:** ${form.message}`,
+          color: 16777215,
+        },
+      ],
     };
 
     try {
-      await axios.post(
+      const data = {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify(message),
+      };
+
+      await fetch(
         "https://discord.com/api/webhooks/797888764893986836/XvD-P9vt0jbWVc_GZG1S_j4jN_2HhFybe4cJ5lQYpWYadnFtfss-pknlkkqLXHl4dMls",
-        JSON.stringify(data)
+        data
       );
 
       setMessageForm(true);
