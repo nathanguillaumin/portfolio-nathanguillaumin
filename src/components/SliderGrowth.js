@@ -56,7 +56,7 @@ const SliderGrowth = ({ show }) => {
           </div>
           <div className="startup_tab_img">
             <h3>Sendinblue growth machine</h3>
-            <p>
+            <div>
               Sendinblue is a SaaS solution for relationship marketing. I have
               worked with them and helped to build a growth machine.
               <br />
@@ -75,7 +75,7 @@ const SliderGrowth = ({ show }) => {
                 <li>DropContact</li>
                 <li>Lusha</li>
               </ul>
-            </p>
+            </div>
 
             <img
               src={require("../img/custom/sendinblue.png")}

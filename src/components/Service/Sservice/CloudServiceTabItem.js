@@ -4,7 +4,7 @@ class Tabitem extends Component {
   render() {
     return itemsTab.map((i) => {
       return (
-        <div className={`col-lg-5 col-md-6`}>
+        <div className={`col-lg-5 col-md-6`} key={i.id}>
           <div className="software_service_item mb_70">
             <img
               src={require(`../../../img/custom/${i.image}.png`)}

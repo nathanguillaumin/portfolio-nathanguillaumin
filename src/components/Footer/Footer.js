@@ -38,6 +38,15 @@ class Footer extends Component {
                               </li>
                             );
                           })}
+                          <li>
+                            <a
+                              className="nav-link links-footer link-mail"
+                              href="mailto:nathan.guillaumin@outlook.com"
+                              style={{ fontWeight: "600" }}
+                            >
+                              nathan.guillaumin@outlook.com
+                            </a>
+                          </li>
                         </ul>
                       </div>
                     </div>
@@ -92,7 +101,7 @@ class Footer extends Component {
               <div className="col-lg-6 col-sm-5 text-right">
                 <p>
                   Made with <i className="icon_heart"></i> in{" "}
-                  <span class="fab fa-react react-logo p-0"></span> React.js
+                  <span className="fab fa-react react-logo p-0"></span> React.js
                 </p>
               </div>
             </div>

@@ -59,15 +59,15 @@ const SliderHTML = ({ show }) => {
               <h3>AudioWizard's Website</h3>
             </a>
             <p>
-              During that mission, I web designed and integrated the whole
+              During that mission, I web designed and integrated the entire
               AudioWizard website with HTML and SCSS.
               <br />
               In order to gain time and to be more effective in my work, I used
               Gulp task manager to process tasks such as JS and CSS
               minifications...
               <br />
-              <br />I also worked on SEO strategies: brought Audiowizard first
-              position in first SERP on their targetted keywords.
+              <br />I also worked on SEO strategies: brought Audiowizard in
+              first position in SERP1 on their targetted keywords.
             </p>
             <a
               href="https://audiowizard.fr/"

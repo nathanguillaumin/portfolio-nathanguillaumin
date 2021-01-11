@@ -58,7 +58,7 @@ const SliderWebflow = ({ show }) => {
             >
               <h3>Jobooster's Website</h3>
             </a>
-            <p>
+            <div>
               Jobooster is a side project I am conducting with a friend. We
               propose coaching for people who are looking for a job.
               <br />
@@ -68,7 +68,7 @@ const SliderWebflow = ({ show }) => {
                 <li>Finding the best snippets and tools to improve UX</li>{" "}
                 <li>Creating SEO strategies</li>
               </ul>
-            </p>
+            </div>
             <a
               href="http://jobooster.io/"
               target="_blank"

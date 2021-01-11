@@ -15,13 +15,13 @@ class CustomNavbar extends Component {
                   src={require("../img/custom/logo_white.png")}
                   style={{ width: "60%" }}
                   alt="White logo of Nathan Guillaumin's Portfolio"
-                  class="logo-nathan"
+                  className="logo-nathan"
                 />
                 <img
                   src={require("../img/custom/logo_2.png")}
                   style={{ width: "60%" }}
                   alt="Logo of Nathan Guillaumin's Portfolio"
-                  class="logo-nathan"
+                  className="logo-nathan"
                 />
               </Link>
               <button
@@ -76,6 +76,19 @@ class CustomNavbar extends Component {
                       duration={500}
                     >
                       My technos and tools
+                    </Link>
+                  </li>
+                  <li className="nav-item dropdown submenu mega_menu mega_menu_two">
+                    <Link
+                      className="nav-link"
+                      activeClass="active"
+                      to="showcase"
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                    >
+                      My projects
                     </Link>
                   </li>
                   <li className="dropdown submenu nav-item">
