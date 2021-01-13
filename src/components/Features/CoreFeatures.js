@@ -55,8 +55,8 @@ const CoreFeatures = () => {
               </div>
               <h4>Entrepreneurial spirit</h4>
               <p>
-                I already launched my own company on the French market and I
-                support some brands and entrepreneurs in their projects.
+                I have already launched my own company and I support several
+                entrepreneurs in developing their brands and projects.
               </p>
             </div>
           </div>
@@ -78,10 +78,11 @@ const CoreFeatures = () => {
                   className="icon-working-with-marketing"
                 />
               </div>
-              <h4>Webmarketing and SEO skilled</h4>
+              <h4>Experienced in Webmarketing and SEO</h4>
               <p>
-                Graduated with a Master from a business school, I have
-                experiences in webmarketing within companies such as L'Oréal.
+                I graduated with a Master from a business school and now have
+                multiple experiences in webmarketing at companies such as
+                L'Oréal.
               </p>
             </div>
           </div>

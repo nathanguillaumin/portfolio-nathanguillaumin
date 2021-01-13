@@ -23,7 +23,7 @@ const TechnosAndTools = () => {
     <section className="software_service_area sec_pad">
       <div className="container" id="technos-and-tools">
         <Sectitle
-          Title="Technos and tools I am able to use
+          Title="Technologies and tools I can use
           "
           sClass="sec_title text-center mb_70"
         />

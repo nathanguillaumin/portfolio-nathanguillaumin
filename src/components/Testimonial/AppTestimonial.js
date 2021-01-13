@@ -61,9 +61,9 @@ class AppTestimonial extends Component {
                 <p>Chief Technical Officer - Audiowizard</p>
               </div>
               <p className="f_400">
-                Nathan was able to accompany us in the realization of different
-                tasks: front / back / website creation / SEO. 3 words to
-                describe Nathan: Efficient, serious and competent.
+                Nathan accompanied us in the realization of different tasks:
+                front / back / website creation / SEO. 3 words to describe
+                Nathan: Efficient, serious, and competent.
               </p>
             </div>
             <div className="app_testimonial_item text-center">
@@ -75,10 +75,10 @@ class AppTestimonial extends Component {
                 <p>Chief Executive Officer - TMS Studio</p>
               </div>
               <p className="f_400">
-                Nathan made awesome work during his mission for Pixter. He has
-                great analytics knowledge and perfect sales and project
-                management skills. He provided us new business opportunities
-                when the company was still a startup. Hope to collaborate with
+                Nathan created some awesome work during his mission for Pixter.
+                He has a great knowledge of analytics and project management
+                skills. His work provided us with new business opportunities
+                when the company was still a startup. I hope to collaborate with
                 him again in the future !
               </p>
             </div>

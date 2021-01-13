@@ -45,7 +45,7 @@ const ScreenshowCase = () => {
           sClass="sec_title text-center mb_70"
           Title="Projects screenshots"
           tClass="t_color3 mb_20"
-          TitleP="Please, take a look to the screenshots of some of my projects!"
+          TitleP="Please take a look at some of my recent projects!"
         />
         <div className="app_screen_info" style={{ cursor: "grab" }}>
           <Slider className="app_screenshot_slider" {...settings}>

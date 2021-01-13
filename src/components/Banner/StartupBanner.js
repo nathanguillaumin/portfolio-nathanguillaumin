@@ -27,12 +27,12 @@ const StBanner = () => {
                   Nathan Guillaumin, web developer
                 </h2>
                 <p className="f_400 w_color l_height28">
-                  Welcome to my own portfolio, I hope you will find all the
-                  details you might need.
+                  Welcome to my portfolio, I hope you will find all the details
+                  you might need.
                   <br />
-                  <br />I have specialized with front-end design interfaces
-                  thanks to React.js and SCSS, and also worked with back-end
-                  technologies such as Node.js, API Platform and Symfony5.
+                  <br />I have specialized in front-end design interfaces using
+                  React.js and SCSS. I also work with back-end technologies such
+                  as Node.js, API Platform and Symfony5.
                 </p>
                 <div className="action_btn d-flex align-items-center mt_40">
                   <Link
