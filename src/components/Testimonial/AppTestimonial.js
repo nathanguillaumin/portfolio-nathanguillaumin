@@ -47,9 +47,7 @@ class AppTestimonial extends Component {
                 <p>Web developer - Advercity</p>
               </div>
               <p className="f_400">
-                Nathan is a complete profile: he knows how to invest in web
-                projects and master all their technical aspects, integrate and
-                adapt to a team, and do everything to achieve his goals.
+              Nathan has a complete skillset: he was very invested in our web projects and mastered all their technical aspects such as integrating and adapting them to our team. He does everything he can to achieve his goals. 
               </p>
             </div>
             <div className="app_testimonial_item text-center">
