@@ -70,7 +70,7 @@ const SliderWebflow = ({ show }) => {
               </ul>
             </div>
             <a
-              href="http://jobooster.io/"
+              href="http://jobooster.co/"
               target="_blank"
               rel="noopener noreferrer"
             >
