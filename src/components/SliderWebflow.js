@@ -52,7 +52,7 @@ const SliderWebflow = ({ show }) => {
         <Slider {...settings} className="case_studies_slider">
           <div className="startup_tab_img">
             <a
-              href="http://jobooster.io/"
+              href="http://jobooster.co/"
               target="_blank"
               rel="noopener noreferrer"
             >
